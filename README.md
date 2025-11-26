@@ -1,3 +1,20 @@
-git remote add origin https://github.com/Orkhan-Mustafayev/gpt.git
-git branch -M main
-git push -u origin main
+# football-ml
+
+Lightweight package for fetching football data, building features (Elo, form, odds), training an XGBoost model, and predicting match outcomes.
+
+## Installation
+```bash
+pip install -e .
+```
+
+## Training
+```bash
+python -m football_ml.training.train_xgb
+```
+
+## Predictions
+```bash
+python -m football_ml.prediction.predict_upcoming
+```
+
+For Colab instructions see `RUNBOOK_COLAB.md`.
